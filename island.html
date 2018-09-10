@@ -36,15 +36,15 @@
         <a-image id="img-sky" src="pictures/skyearth.png"></a-image>
         <a-image id="sand" src="pictures/sand.jpg"></a-image>
         <a-image id="trans" src="pictures/transparent.png"></a-image>
-        <audio id="waves" src="sounds/waves.mp3" preload="auto"></audio>
-        <audio id="moaisound" src="sounds/moaisound.mp3"></audio>
-        <audio id="bug" src="sounds/bug.mp3"></audio>
-        <audio id="blop" src="sounds/blop.mp3"></audio>
-        <audio id="bubble" src="sounds/bubble.mp3"></audio>
-        <audio id="chairmoving" src="sounds/chairmoving.mp3"></audio>
-        <audio id="sleep" src="sounds/sleep.mp3"></audio>
-        <audio id="seebook" src="sounds/seebook.mp3"></audio>
-        <audio id="explosion" src="sounds/explosion.mp3"></audio>
+        <a-asset-item id="waves" src="sounds/waves.mp3" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="moaisound" src="sounds/moaisound.mp3" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="bug" src="sounds/bug.mp3" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="blop" src="sounds/blop.mp3" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="bubble" src="sounds/bubble.mp3" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="chairmoving" src="sounds/chairmoving.mp3" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="sleep" src="sounds/sleep.mp3" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="seebook" src="sounds/seebook.mp3" response-type="arraybuffer"></a-asset-item>
+        <a-asset-item id="explosion" src="sounds/explosion.mp3" response-type="arraybuffer"></a-asset-item>
 
     </a-assets>
 
@@ -259,7 +259,7 @@
 
 
     <!-- Sound wird eingebunden-->
-    <a-sound id="waves" src="#waves" autoplay="true" loop="true" volume="0.1"></a-sound>
+    <a-entity sound="src: #waves; autoplay: true; loop="true"; volume="0.1"></a-entity>
 
 
     <!-- Skybox wird eingebunden-->
